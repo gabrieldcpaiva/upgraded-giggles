@@ -117,7 +117,7 @@ h1.title{margin:20px auto 0;font-family:var(--serif);font-weight:500;line-height
   -webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 10px 24px rgba(0,0,0,.55))}
 .title em{font-style:italic;display:inline-block}
-.hero-sub{max-width:610px;margin:22px auto 0;color:#d9c9c1;font-size:15.5px}
+.hero-sub{max-width:610px;margin:22px auto 0;color:#d9c9c1;font-size:15.5px;text-wrap:balance}
 .hero-sub b{color:var(--gold-hi);font-weight:600}
 .stats{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
 .stat{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);
@@ -169,7 +169,7 @@ h1.title{margin:20px auto 0;font-family:var(--serif);font-weight:500;line-height
 .squad-kicker::before{content:"";width:22px;height:1px;background:var(--gold);opacity:.7}
 .squad-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,4vw,38px);line-height:1.08;margin:8px 0 0;color:#fdf3e0}
 .squad-head h2 em{font-style:italic;color:var(--gold-hi)}
-.squad-note{color:var(--muted);font-size:13px;margin:8px 0 0;max-width:520px}
+.squad-note{color:var(--muted);font-size:13px;margin:8px 0 0;max-width:520px;text-wrap:pretty}
 .squad-count{font-family:var(--serif);font-size:34px;color:rgba(230,196,119,.4);line-height:1;letter-spacing:.02em}
 .squad-count small{display:block;font-family:var(--sans);font-size:8.5px;letter-spacing:.26em;text-transform:uppercase;color:#8f7d76;margin-top:6px}
 
@@ -412,6 +412,8 @@ body.roast .roast-flag{display:block;animation:softIn .4s ease}
 }
 @media (max-width:640px){
   .wrap{width:calc(100% - 28px)}
+  .eyebrow::before,.eyebrow::after{display:none}
+  .eyebrow{font-size:8.5px;letter-spacing:.24em}
   .hero{padding-top:44px}
   .controls{gap:8px}
   .search input{width:min(300px,78vw)}
