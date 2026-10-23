@@ -1,16 +1,15 @@
 {
   "name": "ugc-syndicate",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "private": true,
   "type": "module",
+  "description": "Six unhinged UGC agents in one self-contained HTML file. Camp stays, lies don't.",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
-    "prebuild": "node scripts/export-agents.js",
-    "test": "node --test"
+    "preview": "vite preview --host 0.0.0.0"
   },
   "devDependencies": {
-    "jsdom": "^30.1.3",
     "vite": "^6.1.0"
   }
 }
